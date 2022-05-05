@@ -21,4 +21,4 @@ URL: {}
 ## INICIAR PROJETO
 
 1. Realizar um npm install para baixar todos os módulos node,
-2. Seguir com npm start para inicializar um localhost:3000
+2. Seguir com npm start para inicializar um localhost:3001
