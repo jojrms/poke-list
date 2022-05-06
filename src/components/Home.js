@@ -17,10 +17,26 @@ const Home = () => {
                 <span className='spanLogo'/>
 
                 <div>
-                    <input type='search' onChange={onChange} placeholder='Busque Aqui'/>
                     <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
+                    <input type='search' onChange={onChange} placeholder='Busque o Pokemon'/>
                 </div>
             </header>
+
+            <section id='sectionOne'>
+                <aside>
+                    <img className='imgCharizard' src='https://vignette.wikia.nocookie.net/vsbattles/images/3/35/Charizard_SSBu.png/revision/latest?cb=20180721110519'/>
+                    <img className='imgPokeBall' src='https://pngimg.com/uploads/pokeball/pokeball_PNG21.png'></img>
+                </aside>
+                <aside>
+                    <h1>Baixe. Busque.</h1>
+                    <h1>Aventure-se</h1>
+
+                    <div>
+                        <button/>
+                        <button/>
+                    </div>
+                </aside>
+            </section>
         </section>
     )
 }
