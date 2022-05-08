@@ -5,14 +5,15 @@ import ArticlePokemon from './CSS/styled-components'
 const Home = () => {
 
     const [search, setSearch] = useState([])
-    const [pokemon, setPokemon] = useState([]);
-
+    const [pokemons, setPokemon] = useState([])
+      
+    // exibição de todos os pokemons com limite de 50 por páginas
     useEffect(() => {
-        fetch(`https://pokeapi.co/api/v2/ability/?limit=50&offset=20`) // faço a busca direto na API do IBGE
+        fetch(`https://pokeapi.co/api/v2/pokemon/?limit=50&offset=20`) // faço a busca direto na API
         .then((res) => res.json()) // transformo os arquivos em um json para ter acesso a eles
         .then((data) => {
-            setPokemon(data); // e novamente pegos esses dados e os envio para o meu hook de estado.
-            console.log(pokemon);
+            setPokemon(data.results); // e novamente pegos esses dados e os envio para o meu hook de estado.
+            console.log(pokemons);
         });
     }, []);
 
@@ -52,6 +53,13 @@ const Home = () => {
 
             <section className='sectionTwo'>
                 <h1>Pokedex</h1>
+                <aside className='asideExibitionPokemons'>
+                    {pokemons.map((pokemon) => 
+                    <article key={pokemon.id}>
+                        <img key={pokemon.id} src={`https://pokeapi.co/api/v2/pokemon/${pokemon.name}/`}/>
+                        <label>{pokemon.name}</label>
+                    </article>)}
+                </aside>
             </section>
         </section>
     )
