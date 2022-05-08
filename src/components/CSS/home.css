@@ -7,140 +7,142 @@ body{
     margin: 0;
     position: absolute;
     font-family: Poppins;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 #root, .App{
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body *{
     background-repeat: no-repeat;
     background-position: center;
 }
 
+
 #pokedex header{
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed;
+    position: absolute;
 }
-#pokedex header ul:nth-child(2){
-    width: fit-content;
-    padding: 0;
-    margin: auto;
-    list-style: none;
-    display: flex;
-    grid-gap: 6vh;
-    color: white;
-}
-#pokedex header ul:first-child li:first-child{
-    margin-right: 10vh;
-}
-
-.spanLogo{
+#pokedex header .imgIcone{
     width: 15vh;
-    height: 8vh;
-    background-image: url(https://th.bing.com/th/id/R.262b796faca6ec996931711b1d6b0203?rik=FNftIIXrQSlkwA&pid=ImgRaw&r=0);
-    background-size: contain;
+    height: fit-content;
     display: block;
     margin: auto;
-    margin-left: 5vh;
+    margin-left: 7vw;
 }
+
 #pokedex header div{
-    width: 30vh;
-    height: 5vh;
     display: flex;
+    width: fit-content;
     margin: auto;
-    margin-right: 0;
-}
-#pokedex header div input{
-    width: 90%;
-    height: 100%;
-    border: 2px solid whitesmoke;
-    padding-inline-start: 7vh;
-    border-radius: 20px;
-    font-family: Poppins;
+    margin-right: 5vw;
 }
 #pokedex header div img{
-    width: 2.5vh;
-    height: 2.5vh;
-    margin: 1.3vh;
+    width: 3vh;
+    position: absolute;
+    margin: 1.5vh;
     margin-left: 2vh;
     opacity: .2;
-    position: absolute;
+}
+#pokedex header div input{
+    min-width: 10vh;
+    height: 6vh;
+    padding-inline-start: 7vh;
+    padding-inline-end: 2vh;
+    border-radius: 30px;
+    border: 1px solid #ECECEC;
+    font-family: Poppins;
 }
 
-#sectionOne{
+
+
+.sectionOne{
     width: 100%;
-    min-height: 45vw;
-    display: flex;
-    background-image: linear-gradient(0deg, #1E234A, #15192B);
-}
-#sectionOne aside:nth-child(1){
-    display: flex;
-}
-#sectionOne aside:nth-child(2){
-    width: 65%;
-    background-image: url(../Images/Rectangle\ 71.png);
-    background-size: cover;
-    margin-left: auto;
-}
-#sectionOne aside:nth-child(2) h1:nth-child(1){
-    font-size: 8vh;
-    width: fit-content;
-    margin-left: auto;
-    margin-top: 26vh;
-    margin-right: 5vh;
-    margin-bottom: 0;
-}
-#sectionOne aside:nth-child(2) h1:nth-child(2){
-    font-size: 8vh;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 5vh;
-    margin-top: -3vh;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke-width: .01px;
-    -webkit-text-stroke-color: black;
-}
-#sectionOne aside:nth-child(2) div{
-    width: fit-content;
+    min-height: 95vh;
     display: grid;
-    margin-top: -10vh;
-    margin-left: auto;
-    margin-right: 5vh;
-    grid-template-columns: repeat(2, auto);
-    grid-gap: 1vh;
+    grid-template-columns: 50% 50%;
+    background-color: #1E234A;
+    background-image: url(../Images/Rectangle\ 71.png);
+    background-size: contain;
+    background-position: right;
 }
-#sectionOne aside:nth-child(2) div button{
-    width: 10vw;
-    height: 3.5vw;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+.sectionOne aside:nth-child(1){
+    display: inline-grid;
 }
-#sectionOne aside:nth-child(2) div button:nth-child(1){
-    background-image: url(../Images/DownloadGooglePlay.png);
-    background-size: cover;
-}
-#sectionOne aside:nth-child(2) div button:nth-child(2){
-    background-image: url(../Images/DownloadAppStore.png);
-    background-size: cover;
-}
-#sectionOne .imgCharizard{
-    width: 35vw;
+.sectionOne aside:nth-child(1) .charizard{
+    width: 60%;
     margin: auto;
-    margin-left: 10vh;
+    margin-top: 15vh;
     transform: scaleX(-1);
 }
+.sectionOne aside:nth-child(1) .pokeball{
+    width: 15vh;
+    transform: rotate(-15deg);
+    margin-left: 6vw;
+    margin-bottom: -10vh;
+}
 
-.imgPokeBall:nth-child(2){
-    position: absolute;
-    width: 10vh;
-    margin-top: 42vw;
-    margin-left: 10vh;
-    transform: rotate(-14deg);
+.sectionOne aside:nth-child(2){
+    width: 100%;
+    height: 100%;
+}
+.sectionOne aside:nth-child(2) .pokeball:nth-child(1){
+    width: 8vh;
+    transform: rotate(-125deg) scaleX(-1);
+    margin-left: 7vw;
+    margin-top: 13vh;
+    margin-bottom: -10vh;
+    display: block;
+}
+.sectionOne aside:nth-child(2) .pokeball:nth-child(2){
+    width: 15vh;
+    transform: rotate(-25deg) scaleX(-1);
+    margin-left: 45vw;
+    margin-top: 8vh;
+    margin-bottom: -10vh;
+    display: block;
+}
+.sectionOne aside:nth-child(2) .pokeball:nth-child(5){
+    width: 8vh;
+    transform: rotate(25deg) scaleX(-1);
+    margin-left: 2vw;
+    margin-top: -3vh;
+    display: block;
+}
+.sectionOne aside:nth-child(2) .pokeball:nth-child(6){
+    width: 8vh;
+    transform: rotate(25deg);
+    margin-left: 30vw;
+    margin-top: 8vh;
+    margin-bottom: -10vh;
+    display: block;
+}
+
+.sectionOne aside:nth-child(2) h1{
+    width: fit-content;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 3vw;
+    font-size: 4.5vw;
+}
+.sectionOne aside:nth-child(2) :nth-child(3){
+    margin-top: 11vh;
+}
+.sectionOne aside:nth-child(2) :nth-child(4){
+    margin-top: -3vh;
+}
+
+
+
+.sectionTwo{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #F8F8F8;
+}
+.sectionTwo h1{
+    font-size: 3vh;
+    margin-left: 15vh;
+    margin-top: 15vh;
 }
