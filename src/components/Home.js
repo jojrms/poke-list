@@ -4,18 +4,38 @@ import ArticlePokemon from './CSS/styled-components'
 
 const Home = () => {
 
-    const [search, setSearch] = useState([])
-    const [pokemons, setPokemon] = useState([])
-      
-    // exibição de todos os pokemons com limite de 50 por páginas
-    useEffect(() => {
-        fetch(`https://pokeapi.co/api/v2/pokemon/?limit=50&offset=20`) // faço a busca direto na API
-        .then((res) => res.json()) // transformo os arquivos em um json para ter acesso a eles
-        .then((data) => {
-            setPokemon(data.results); // e novamente pegos esses dados e os envio para o meu hook de estado.
-            console.log(pokemons);
-        });
-    }, []);
+    const [search, setSearch] = useState([]) //Armazena o valor do input de busca
+    const[allPokemons, setAllPokemons] = useState([]) //Armazena todos os pokemons
+    const[dataPokemon, setDataPokemon] = useState([])
+    const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon/') //Armazena a url que busca todos os pokemons
+    const[nextPage, setNextPage] = useState() //Armazena a url que segue a inicial
+    const[previousPage, setPreviousPage] = useState() //Armazena a url que precede a inicial
+
+
+    const getAllPokemons = async () => {
+        const res = await fetch(url) //Faz uma requisição para a url
+        const data = await res.json()
+    
+        // setUrl(data.next)
+        setNextPage(data.next)
+        setPreviousPage(data.previous)
+    
+        function createPokemonObject(results)  { //Cria uma função que faz um map nas informações dos pokemons
+          results.forEach( async pokemon => {
+            const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
+            const data =  await res.json()
+
+            console.log(data);
+
+            setAllPokemons( currentList => [...currentList, data])
+            })
+        }
+        createPokemonObject(data.results)
+      }
+    
+     useEffect(() => {
+      getAllPokemons()
+     }, [])
 
     const onChange = (element) => {
         console.log("pokemon: ", element.target.value)
@@ -54,11 +74,20 @@ const Home = () => {
             <section className='sectionTwo'>
                 <h1>Pokedex</h1>
                 <aside className='asideExibitionPokemons'>
-                    {pokemons.map((pokemon) => 
-                    <article key={pokemon.id}>
-                        <img key={pokemon.id} src={`https://pokeapi.co/api/v2/pokemon/${pokemon.name}/`}/>
-                        <label>{pokemon.name}</label>
-                    </article>)}
+                    {allPokemons.map( (pokemon) => 
+                       <ArticlePokemon
+                       id={pokemon.id}
+                       image={pokemon.sprites.front_default}
+                       name={pokemon.name}
+                       habilities={pokemon.abilities.map(ab => {
+                           return(
+                               <span className='spanAbilitie'>
+                                {ab.ability.name}
+                               </span>
+                           )
+                       })}
+                       />
+                    )}
                 </aside>
             </section>
         </section>
