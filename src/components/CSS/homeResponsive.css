@@ -13,7 +13,8 @@
         border-bottom: 2px solid black;
     }
     .asideExibitionPokemons article img:nth-child(2){
-        width: 30vw;
+        width: 20vw;
+        margin: auto;
     }
     .asideExibitionPokemons article .divInfo div p{
         font-size: 2.5vw;
@@ -41,7 +42,10 @@
         border-bottom: 3px solid black;
     }
     .asideExibitionPokemons article img:nth-child(2){
-        width: 15vw;
+        width: 10vw;
+        margin: auto;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
     }
     .asideExibitionPokemons article .divInfo div p{
         font-size: 2vw;
@@ -68,7 +72,8 @@
         border-bottom: 3px solid black;
     }
     .asideExibitionPokemons article img:nth-child(2){
-        width: 10vw;
+        width: 5vw;
+        margin: auto;
     }
     .asideExibitionPokemons article .divInfo div p{
         font-size: 1vw;

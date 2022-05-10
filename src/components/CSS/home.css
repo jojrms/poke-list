@@ -208,7 +208,6 @@ body *{
     cursor: pointer;
 }
 .asideExibitionPokemons article img:nth-child(2){
-    margin: auto;
     display: -webkit-box;
 }
 .asideExibitionPokemons article .divName{
