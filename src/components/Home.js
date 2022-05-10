@@ -6,7 +6,6 @@ const Home = () => {
 
     const [search, setSearch] = useState([]) //Armazena o valor do input de busca
     const[allPokemons, setAllPokemons] = useState([]) //Armazena todos os pokemons
-    const[dataPokemon, setDataPokemon] = useState([])
     const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon/') //Armazena a url que busca todos os pokemons
     const[nextPage, setNextPage] = useState() //Armazena a url que segue a inicial
     const[previousPage, setPreviousPage] = useState() //Armazena a url que precede a inicial
@@ -18,6 +17,8 @@ const Home = () => {
     
         // setUrl(data.next)
         setNextPage(data.next)
+
+        console.log(nextPage);
         setPreviousPage(data.previous)
     
         function createPokemonObject(results)  { //Cria uma função que faz um map nas informações dos pokemons
@@ -73,19 +74,22 @@ const Home = () => {
 
             <section className='sectionTwo'>
                 <h1>Pokedex</h1>
+                <button onClick={() => {setUrl(nextPage)}}>Próximo</button>
                 <aside className='asideExibitionPokemons'>
                     {allPokemons.map( (pokemon) => 
                        <ArticlePokemon
                        id={pokemon.id}
                        image={pokemon.sprites.front_default}
                        name={pokemon.name}
+                       type = {pokemon.types[0].type.name}
                        habilities={pokemon.abilities.map(ab => {
                            return(
-                               <span className='spanAbilitie'>
+                               <span className={'spanAbilitie ' + pokemon.types[0].type.name}>
                                 {ab.ability.name}
                                </span>
                            )
                        })}
+                       
                        />
                     )}
                 </aside>
