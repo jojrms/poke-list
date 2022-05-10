@@ -19,8 +19,9 @@ function App() {
       <div className="App">
         <Routes>
             <Route path="/" element={<Home/>} />
+            <Route path="//pokemons/0" element={<Home/>} />
             <Route
-              path="/pokemons/:name"
+              path="/pokemons/:id"
               element={<Viewer/>}
             />
         </Routes>

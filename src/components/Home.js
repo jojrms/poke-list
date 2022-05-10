@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import ArticlePokemon from './CSS/styled-components'
 
+
 const Home = () => {
 
     const [search, setSearch] = useState([]) //Armazena o valor do input de busca

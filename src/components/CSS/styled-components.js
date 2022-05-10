@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useNavigate } from 'react-router-dom';
 
-const ArticlePokemon = ({image, name, type, life, attack, defense, speed, abilities}) => {
+const ArticlePokemon = ({image, name, type, life, attack, defense, speed, id}) => {
 
     const navigate = useNavigate();
     const pokemonRoute = () => {
-        navigate(`/pokemons/${name}`);
+        navigate(`/pokemons/${id}`);
     }
 
     return (

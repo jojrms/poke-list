@@ -22,6 +22,10 @@
         width: 2vw;
         height: 2vw;
     }
+
+    .backgroundTotal article span div span{
+        font-size: 2.5vw;
+    }
 }
 
 @media (min-width: 550px) {
@@ -46,6 +50,10 @@
         width: 2vw;
         height: 2vw;
     }
+
+    .backgroundTotal article span div span{
+        font-size: 2vw;
+    }
 }
 @media (min-width: 850px) {
     .asideExibitionPokemons{
@@ -68,5 +76,9 @@
     .asideExibitionPokemons article .divInfo div img{
         width: 1vw;
         height: 1vw;
+    }
+
+    .backgroundTotal article span div span{
+        font-size: .8vw;
     }
 }

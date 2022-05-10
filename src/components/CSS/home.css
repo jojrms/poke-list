@@ -234,7 +234,7 @@ body *{
     padding-inline-end: 1vw;
     font-size: 2.5vh;
 }
-.asideExibitionPokemons article .divInfo div .spanBarer{
+.spanBarer{
     width: 100%;
     height: 1vh;
     display: block;
@@ -243,7 +243,7 @@ body *{
     overflow: hidden;
     margin: auto;
 }
-.asideExibitionPokemons article .divInfo div .spanBarer span{
+.spanBarer span{
     height: 100%;
     display: block;
     background-color: rgb(3, 192, 113);
