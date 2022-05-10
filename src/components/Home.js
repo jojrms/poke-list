@@ -43,6 +43,15 @@ const Home = () => {
         setSearch(element.target.value) //Insere no search o valor do input de pesquisa
     }
 
+    const exibition = document.getElementById('exibition');
+    const notExibition = document.getElementById('notExibition');
+
+    const event = () => {
+        exibition.addEventListener('click', () => {
+            console.log('teste');
+        });
+    }
+
     return(
         <section id="pokedex">
             <header>
@@ -57,7 +66,9 @@ const Home = () => {
 
             <section className='sectionOne'>
                 <aside>
+                    <span className='spanDec'/>
                     <img className='charizard' src='https://th.bing.com/th/id/R.ad6a3f3cddf66be471b562d74e6e1e08?rik=rR%2fQCj4voRcUyw&pid=ImgRaw&r=0'/>
+                    <span className='spanDec'/>
                     <img className='pokeball' src='https://pngimg.com/uploads/pokeball/pokeball_PNG21.png'/>
                 </aside>
                 <aside>
@@ -82,7 +93,9 @@ const Home = () => {
                        image={pokemon.sprites.front_default}
                        name={pokemon.name}
                        type = {pokemon.types[0].type.name}
-                       habilities={pokemon.abilities.map(ab => {
+                       life = {pokemon.stats[0].base_stat}
+                       attack = {pokemon.stats[1].base_stat}
+                       abilities={pokemon.abilities.map(ab => {
                            return(
                                <span className={'spanAbilitie ' + pokemon.types[0].type.name}>
                                 {ab.ability.name}
