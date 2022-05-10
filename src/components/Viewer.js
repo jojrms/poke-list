@@ -12,10 +12,10 @@ import React, {
         navigate(`/`);
     }
     const routePreviousPokemon = () => {
-      navigate(`/pokemons/${id - 1}`);
+      navigate(`/pokemons/${(id - 1)}`);
     }
     const routeNextPokemon = () => {
-      navigate(`/pokemons/${id + 1}`);
+      navigate(`/pokemons/${parseInt(id) + 1}`);
     }
 
     const [pokemon, setPokemon] = useState(null);

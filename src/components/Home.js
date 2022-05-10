@@ -85,7 +85,7 @@ const Home = () => {
                     {allPokemons.map( (pokemon) => 
                        <ArticlePokemon
                        id={pokemon.id}
-                       image={pokemon.sprites.front_default}
+                       image={pokemon.sprites.other.dream_world.front_default}
                        name={pokemon.name}
                        type = {pokemon.types[0].type.name}
                        life = {pokemon.stats[0].base_stat}
