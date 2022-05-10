@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+@media (max-width: 550px) {
+    .asideExibitionPokemons{
+        grid-gap: 3vw;
+        grid-template-columns: repeat(2, auto);
+    }
+    .asideExibitionPokemons article{
+        border: 2px solid black;
+    }
+    .asideExibitionPokemons article .divName{
+        font-size: 3vw;
+        border-bottom: 2px solid black;
+    }
+    .asideExibitionPokemons article img:nth-child(2){
+        width: 30vw;
+    }
+    .asideExibitionPokemons article .divInfo div p{
+        font-size: 2.5vw;
+    }
+    .asideExibitionPokemons article .divInfo div img{
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+@media (min-width: 550px) {
+    .asideExibitionPokemons{
+        grid-gap: 2vw;
+        grid-template-columns: repeat(3, 33.3%);
+    }
+    .asideExibitionPokemons article{
+        border: 4px solid black;
+    }
+    .asideExibitionPokemons article .divName{
+        font-size: 2.5vw;
+        border-bottom: 3px solid black;
+    }
+    .asideExibitionPokemons article img:nth-child(2){
+        width: 15vw;
+    }
+    .asideExibitionPokemons article .divInfo div p{
+        font-size: 2vw;
+    }
+    .asideExibitionPokemons article .divInfo div img{
+        width: 2vw;
+        height: 2vw;
+    }
+}
+@media (min-width: 850px) {
+    .asideExibitionPokemons{
+        grid-gap: 2vw;
+        grid-template-columns: repeat(4, auto);
+    }
+    .asideExibitionPokemons article{
+        border: 4px solid black;
+    }
+    .asideExibitionPokemons article .divName{
+        font-size: 1.3vw;
+        border-bottom: 3px solid black;
+    }
+    .asideExibitionPokemons article img:nth-child(2){
+        width: 10vw;
+    }
+    .asideExibitionPokemons article .divInfo div p{
+        font-size: 1vw;
+    }
+    .asideExibitionPokemons article .divInfo div img{
+        width: 1vw;
+        height: 1vw;
+    }
+}
