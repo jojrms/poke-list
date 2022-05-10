@@ -1,5 +1,7 @@
 import Home from "./components/Home";
 
+import './components/CSS/animations.css'
+
 import './components/CSS/homeMobile.css';
 import './components/CSS/home.css';
 

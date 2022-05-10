@@ -1,0 +1,13 @@
+@media (min-width: 450px) {
+    @keyframes animationPokemon {
+        from {margin-left: 50%;}
+        50%{margin-left: 5%;}
+        to {margin-left: -50%;}
+    }
+
+    @keyframes animationBackgroundColor {
+        0%{background-color: #1E234A}
+        50%{background-color: #351374}
+        100%{background-color: #4a0e7a}
+    }
+}

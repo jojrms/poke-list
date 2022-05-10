@@ -3,3 +3,20 @@
 @media (max-width: 450px) {
     
 }
+
+@media (max-width: 850px) {
+    .asideExibitionPokemons{
+        grid-template-columns: repeat(3, 33.3%);
+    }
+    .asideExibitionPokemons article .divName{
+        font-size: 2.5vw;
+    }
+}
+@media (min-width: 850px) {
+    .asideExibitionPokemons{
+        grid-template-columns: repeat(4, auto);
+    }
+    .asideExibitionPokemons article .divName{
+        font-size: 1.3vw;
+    }
+}

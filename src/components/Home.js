@@ -66,10 +66,17 @@ const Home = () => {
 
             <section className='sectionOne'>
                 <aside>
+                    
                     <span className='spanDec'/>
+
+                    <button id='previousPokemon' className='buttonArrow'/>
+
                     <img className='charizard' src='https://th.bing.com/th/id/R.ad6a3f3cddf66be471b562d74e6e1e08?rik=rR%2fQCj4voRcUyw&pid=ImgRaw&r=0'/>
                     <span className='spanDec'/>
                     <img className='pokeball' src='https://pngimg.com/uploads/pokeball/pokeball_PNG21.png'/>
+                
+                    <button id='nextPokemon' className='buttonArrow'/>
+
                 </aside>
                 <aside>
 
@@ -95,13 +102,15 @@ const Home = () => {
                        type = {pokemon.types[0].type.name}
                        life = {pokemon.stats[0].base_stat}
                        attack = {pokemon.stats[1].base_stat}
-                       abilities={pokemon.abilities.map(ab => {
-                           return(
-                               <span className={'spanAbilitie ' + pokemon.types[0].type.name}>
-                                {ab.ability.name}
-                               </span>
-                           )
-                       })}
+                       defense = {pokemon.stats[2].base_stat}
+                       speed = {pokemon.stats[5].base_stat}
+                    //    abilities={pokemon.abilities.map(ab => {
+                    //        return(
+                    //            <span className={'spanAbilitie ' + pokemon.types[0].type.name}>
+                    //             {ab.ability.name}
+                    //            </span>
+                    //        )
+                    //    })}
                        
                        />
                     )}
