@@ -2,16 +2,30 @@ import Home from "./components/Home";
 
 import './components/CSS/animations.css'
 
-import './components/CSS/homeMobile.css';
+import './components/CSS/homeResponsive.css';
 import './components/CSS/home.css';
+import './components/CSS/viewer.css';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Viewer from './components/Viewer'
 
 function App() {
   return (
-    <div className="App">
-
-      <Home/>
-
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route
+              path="/pokemons/:name"
+              element={<Viewer/>}
+            />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

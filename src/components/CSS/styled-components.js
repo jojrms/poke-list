@@ -1,9 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
+import { useNavigate } from 'react-router-dom';
 
 const ArticlePokemon = ({image, name, type, life, attack, defense, speed, abilities}) => {
 
+    const navigate = useNavigate();
+    const pokemonRoute = () => {
+        navigate(`/pokemons/${name}`);
+    }
+
     return (
-        <article>
+        <article onClick={pokemonRoute}>
                 <div className={"divName " + type}>{name}
                 </div>
                 <img src={image} alt={name} />

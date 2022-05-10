@@ -1,0 +1,33 @@
+.backgroundTotal{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.backgroundTotal header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    background-color: white;
+}
+.backgroundTotal header .imgIcone{
+    width: 8vh;
+    height: fit-content;
+    display: block;
+    margin: auto;
+    margin-left: 4vw;
+    cursor: pointer;
+}
+
+.backgroundTotal article{
+    width: 90%;
+    min-height: 20vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.13);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.backgroundTotal article span

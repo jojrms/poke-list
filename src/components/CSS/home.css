@@ -22,17 +22,17 @@ body *{
 
 #pokedex header{
     width: 100%;
-    height: 20vh;
+    height: 8vh;
     display: flex;
     position: absolute;
     z-index: 2;
 }
 #pokedex header .imgIcone{
-    width: 15vh;
+    width: 8vh;
     height: fit-content;
     display: block;
     margin: auto;
-    margin-left: 7vw;
+    margin-left: 4vw;
 }
 
 #pokedex header div{
@@ -62,7 +62,7 @@ body *{
 
 .sectionOne{
     width: 100%;
-    min-height: 95vh;
+    min-height: 50vw;
     display: grid;
     grid-template-columns: 40% 60%;
     background-color: #1E234A;
@@ -84,24 +84,6 @@ body *{
     z-index: 0;
     border-radius: 100%;
 }
-.buttonArrow{
-    width: 7vh;
-    height: 8vh;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    background-image: url(https://th.bing.com/th/id/R.61c09d679a4057ecf02ea3ef5dbf4308?rik=vsBxtaGrWLA58w&riu=http%3a%2f%2fpixelartmaker.com%2fart%2f919be2389ded16d.png&ehk=h02qvO3qSkgF0%2fiX9DTfGibBfRkx2eUVZpkPvV0xI3E%3d&risl=&pid=ImgRaw&r=0);
-    background-size: contain;
-}
-#previousPokemon{
-    transform: scaleX(-1);
-    margin-top: 40vh;
-    margin-left: 4vh;
-}
-#nextPokemon{
-    margin-top: -52vh;
-    margin-left: 32vw;
-}
 .sectionOne aside:nth-child(1) .spanDec:nth-child(1){
     background-color: #1D286F;
     margin-bottom: -25vw;
@@ -113,22 +95,19 @@ body *{
     margin-bottom: 0;
 }
 .sectionOne aside:nth-child(1) .charizard{
-    width: 40%;
+    width: 45vw;
     margin: auto;
-    margin-top: -35vh;
-    margin-left: -50%;
+    margin-top: 7vw;
+    margin-left: -10%;
     margin-bottom: -80vh;
-    transform: scaleX(-1);
     z-index: 1;
-    animation: 5s;
-    animation-name: animationPokemon;
 }
 .sectionOne aside:nth-child(1) .pokeball{
-    width: 15vh;
+    width: 10vw;
     transform: rotate(-15deg);
     margin-left: 6vw;
     margin-bottom: -10vh;
-    margin-top: -23vh;
+    margin-top: 1vw;
 }
 
 .sectionOne aside:nth-child(2){
@@ -138,15 +117,17 @@ body *{
     z-index: 5;
 }
 .sectionOne aside:nth-child(2) .pokeball:nth-child(1){
-    width: 8vh;
+    width: 4vw;
     transform: rotate(-125deg) scaleX(-1);
     margin-left: 7vw;
     margin-top: 13vh;
     margin-bottom: -10vh;
     display: block;
+    animation-name: pokeball;
+    animation-duration: 4s;
 }
 .sectionOne aside:nth-child(2) .pokeball:nth-child(2){
-    width: 15vh;
+    width: 7vw;
     transform: rotate(-25deg) scaleX(-1);
     margin-left: 45vw;
     margin-top: 8vh;
@@ -154,14 +135,14 @@ body *{
     display: block;
 }
 .sectionOne aside:nth-child(2) .pokeball:nth-child(5){
-    width: 8vh;
+    width: 3.5vw;
     transform: rotate(25deg) scaleX(-1);
     margin-left: 2vw;
     margin-top: -3vh;
     display: block;
 }
 .sectionOne aside:nth-child(2) .pokeball:nth-child(6){
-    width: 8vh;
+    width: 4vw;
     transform: rotate(25deg);
     margin-left: 30vw;
     margin-top: 8vh;
@@ -175,6 +156,12 @@ body *{
     margin-left: auto;
     margin-right: 3vw;
     font-size: 4.5vw;
+    color: #131313;
+}
+.sectionOne aside:nth-child(2) h1:nth-child(4){
+    color: transparent;
+    letter-spacing: 1px;
+    -webkit-text-stroke: .1px #131313;
 }
 .sectionOne aside:nth-child(2) :nth-child(3){
     margin-top: 11vh;
@@ -218,6 +205,7 @@ body *{
     display: grid;
     padding: 2vh 0vh;
     padding-bottom: 4vh;
+    cursor: pointer;
 }
 .asideExibitionPokemons article img:nth-child(2){
     margin: auto;

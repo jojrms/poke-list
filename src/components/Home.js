@@ -43,23 +43,14 @@ const Home = () => {
         setSearch(element.target.value) //Insere no search o valor do input de pesquisa
     }
 
-    const exibition = document.getElementById('exibition');
-    const notExibition = document.getElementById('notExibition');
-
-    const event = () => {
-        exibition.addEventListener('click', () => {
-            console.log('teste');
-        });
-    }
-
     return(
         <section id="pokedex">
-            <header>
+            <header id='header'>
                 <img className='imgIcone' src='https://logodownload.org/wp-content/uploads/2016/08/Pokemon-Go-logo.png'/>
             
                 <div>
                     <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
-                    <input type='search' onChange={onChange} placeholder='Busque o Pokemon'/>
+                    <input type='search' value={search} onChange={(ev) => setSearch(ev.target.value)} placeholder='Busque o Pokemon'/>
                 </div>
 
             </header>
@@ -69,13 +60,10 @@ const Home = () => {
                     
                     <span className='spanDec'/>
 
-                    <button id='previousPokemon' className='buttonArrow'/>
-
-                    <img className='charizard' src='https://th.bing.com/th/id/R.ad6a3f3cddf66be471b562d74e6e1e08?rik=rR%2fQCj4voRcUyw&pid=ImgRaw&r=0'/>
+                    <img className='charizard' src='https://vignette.wikia.nocookie.net/deathbattle/images/1/1b/Charizard_%28JoshR691%29.gif/revision/latest?cb=20180402051123'/>
                     <span className='spanDec'/>
                     <img className='pokeball' src='https://pngimg.com/uploads/pokeball/pokeball_PNG21.png'/>
                 
-                    <button id='nextPokemon' className='buttonArrow'/>
 
                 </aside>
                 <aside>
@@ -92,7 +80,6 @@ const Home = () => {
 
             <section className='sectionTwo'>
                 <h1>Pokedex</h1>
-                <button onClick={() => {setUrl(nextPage)}}>Próximo</button>
                 <aside className='asideExibitionPokemons'>
                     {allPokemons.map( (pokemon) => 
                        <ArticlePokemon

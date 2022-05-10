@@ -5,9 +5,8 @@
         to {margin-left: -50%;}
     }
 
-    @keyframes animationBackgroundColor {
-        0%{background-color: #1E234A}
-        50%{background-color: #351374}
-        100%{background-color: #4a0e7a}
+    @keyframes pokeball {
+        0%{transform: rotate(0deg) scaleX(-1)}
+        100%{transform: rotate(-360deg) scaleX(-1)}
     }
 }
