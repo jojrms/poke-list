@@ -44,11 +44,8 @@
     border-radius: 10px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.13);
     margin: auto;
-    display: flex;
 }
 .backgroundTotal article .spanExibition{
-    width: 20vw;
-    height: 25vw;
     margin: auto;
     margin-left: 3vw;
     margin-right: 0;
@@ -56,11 +53,7 @@
     display: grid;
 }
 .backgroundTotal article .spanExibition .spanId{
-    font-size: 5vw;
-    position: absolute;
     font-weight: bold;
-    margin: 2vw;
-    margin-top: 0;
     color: #00000008;
     z-index: 0;
 }
@@ -68,7 +61,6 @@
     width: 35%;
     margin: auto;
     margin-top: 4vw;
-    margin-left: 7vw;
     margin-bottom: 2vw;
     z-index: 5;
 }

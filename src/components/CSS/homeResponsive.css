@@ -27,6 +27,12 @@
     .backgroundTotal article span div span{
         font-size: 2.5vw;
     }
+    .backgroundTotal article{
+        display: grid;
+    }
+    .backgroundTotal article .spanExibition .spanId{
+        margin: auto;
+    }
 }
 
 @media (min-width: 550px) {
@@ -58,6 +64,21 @@
     .backgroundTotal article span div span{
         font-size: 2vw;
     }
+    .button{
+        display: none;
+    }
+    .backgroundTotal article{
+        display: grid;
+    }
+    .backgroundTotal article .spanExibition .spanId{
+        margin: auto;
+        margin-top: 5vw;
+        margin-bottom: -15vw;
+        font-size: 10vw;
+    }
+    .backgroundTotal article span div span{
+        margin-top: 4vw;
+    }
 }
 @media (min-width: 850px) {
     .asideExibitionPokemons{
@@ -85,5 +106,21 @@
 
     .backgroundTotal article span div span{
         font-size: .8vw;
+    }
+    .backgroundTotal article .spanExibition{
+        width: 20vw;
+        height: 25vw;
+    }
+    .backgroundTotal article .spanExibition .spanId{
+        margin: 2vw;
+        position: absolute;
+        margin-top: 0;
+        font-size: 5vw;
+    }
+    .backgroundTotal article{
+        display: flex;
+    }
+    #imagePokemon{
+        margin-left: 7vw;
     }
 }
