@@ -13,11 +13,6 @@ Uso do framework React.js,
 Node: = ^6.9.0,
 React: ^17.0.2
 
-## HOSPEDAGEM
-Será utilizado o site Netlify para realizar os builds, deploys e hospedagem do site. 
-
-URL: {}
-
 ## INICIAR PROJETO
 
 1. Realizar um npm install para baixar todos os módulos node,
