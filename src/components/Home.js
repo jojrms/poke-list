@@ -27,7 +27,7 @@ const Home = () => {
             const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
             const data =  await res.json()
 
-            console.log(data);
+            console.log(res.results);
 
             setAllPokemons( currentList => [...currentList, data])
             })
@@ -43,20 +43,15 @@ const Home = () => {
         console.log("pokemon: ", element.target.value)
         setSearch(element.target.value) //Insere no search o valor do input de pesquisa
     }
+    
 
     return(
         <section id="pokedex">
             <header id='header'>
                 <img className='imgIcone' src='https://logodownload.org/wp-content/uploads/2016/08/Pokemon-Go-logo.png'/>
-            
-                <div>
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
-                    <input type='search' value={search} onChange={(ev) => setSearch(ev.target.value)} placeholder='Busque o Pokemon'/>
-                </div>
-
             </header>
 
-            <section className='sectionOne'>
+            {/* <section className='sectionOne'>
                 <aside>
                     
                     <span className='spanDec'/>
@@ -77,10 +72,17 @@ const Home = () => {
                     <img className='pokeball' src='https://pngimg.com/uploads/pokeball/pokeball_PNG21.png'/>
 
                 </aside>
-            </section>
+            </section> */}
 
             <section className='sectionTwo'>
-                <h1>Pokedex</h1>
+                <div className='divPokedexHeader' style={{display: 'flex'}}>
+                    <h1>Pokedex</h1>
+                    <div>
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"/>
+                        <input type='search' value={search} onChange={(ev) => setSearch(ev.target.value)} placeholder='Busque o Pokemon'/>
+                    </div>    
+                </div>
+                
                 <aside className='asideExibitionPokemons'>
                     {allPokemons.map( (pokemon) => 
                        <ArticlePokemon

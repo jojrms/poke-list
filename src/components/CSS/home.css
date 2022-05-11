@@ -9,6 +9,10 @@ body{
     position: absolute;
     font-family: Poppins;
     overflow-x: hidden;
+    background-color: #F8F8F8;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 #root, .App{
     height: 100%;
@@ -24,7 +28,7 @@ body *{
     width: 100%;
     height: 8vh;
     display: flex;
-    position: absolute;
+    background-color: transparent;
     z-index: 2;
 }
 #pokedex header .imgIcone{
@@ -35,20 +39,20 @@ body *{
     margin-left: 4vw;
 }
 
-#pokedex header div{
+#pokedex .divPokedexHeader div{
     display: flex;
     width: fit-content;
     margin: auto;
+    margin-top: 3vw;
     margin-right: 5vw;
 }
-#pokedex header div img{
+#pokedex .divPokedexHeader div img{
     width: 3vh;
-    position: absolute;
     margin: 1.5vh;
     margin-left: 2vh;
     opacity: .2;
 }
-#pokedex header div input{
+#pokedex .divPokedexHeader div input{
     min-width: 10vh;
     height: 6vh;
     padding-inline-start: 7vh;
@@ -56,6 +60,7 @@ body *{
     border-radius: 30px;
     border: 1px solid #ECECEC;
     font-family: Poppins;
+    margin-left: -7vh;
 }
 
 
@@ -175,7 +180,6 @@ body *{
 .sectionTwo{
     width: 100%;
     min-height: 50vh;
-    background-color: #F8F8F8;
     display: block;
     z-index: 5;
     padding-bottom: 5vh;
@@ -183,7 +187,8 @@ body *{
 .sectionTwo h1{
     font-size: 3vh;
     margin-left: 15vh;
-    margin-top: 15vh;
+    margin-bottom: 5vw;    
+    margin-top: 7vh;
     display: inline-flex;
 }
 .asideExibitionPokemons{

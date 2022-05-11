@@ -161,6 +161,9 @@
         width: 7vw;
         height: 7vw;
     }
+    .ulInfo li{
+        margin-bottom: -2vw;
+    }
 }
 
 
@@ -204,6 +207,7 @@
     }
     .backgroundTotal article .divInformations h1{
         font-size: 3vw;
+        margin-top: 3vw;
     }
     .backgroundTotal article .spanExibition{
         width: 20vw;
@@ -237,5 +241,8 @@
     .divVersions img{
         width: 3vw;
         height: 3vw;
+    }
+    .ulInfo li{
+        margin-bottom: -1vw;
     }
 }
