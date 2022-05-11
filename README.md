@@ -1,7 +1,6 @@
 ### SOBRE O PROJETO
 A codificação do Poke-List foi realizada por Jordana, utilizando a Poke API. A função é de exibir uma lista de 50 pokemons por tela, com paginação, além dos detalhes sobre cada um. 
 O UI foi pensado com foco maior em mobile.
-Foi utilizado styled components.
 
 ## LINGUAGENS
 O projeto foi realizado em:
