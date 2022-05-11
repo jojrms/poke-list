@@ -70,7 +70,7 @@ import React, {
                 ))}
               </ul>    
             </div>
-            <div>
+            <div className='divExbInfoPokemon'>
               <p style={{fontWeight: 'bold', marginTop: '1vw'}}>Informações: </p>
               <ul className='ulInfo'>
                 <li>

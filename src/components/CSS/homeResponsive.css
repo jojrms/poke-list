@@ -13,8 +13,10 @@
         border-bottom: 2px solid black;
     }
     .asideExibitionPokemons article img:nth-child(2){
-        width: 20vw;
+        width: 16vw;
         margin: auto;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
     }
     .asideExibitionPokemons article .divInfo div p{
         font-size: 2.5vw;
@@ -24,16 +26,69 @@
         height: 2vw;
     }
 
-    .backgroundTotal article span div span{
-        font-size: 2.5vw;
-    }
     .backgroundTotal article{
         display: grid;
     }
     .backgroundTotal article .spanExibition .spanId{
         margin: auto;
     }
+
+    .backgroundTotal article span div span{
+        font-size: 4vw; 
+    }
+    .button{
+        height: 12vw;
+        width: 12vw;
+        margin: auto;
+        margin-top: 45vw;
+    }
+    #previousButton{
+        margin-left: 5vw;
+    }
+    #nextButton{
+        margin-right: 5vw;
+    }
+    .button img{
+        width: 70%;
+    }
+    .backgroundTotal article{
+        width: 100%;
+        margin-top: 70vw;
+        border-top-right-radius: 45px;
+        border-top-left-radius: 45px;
+        position: absolute;     
+    }
+    .backgroundTotal article .divInformations{
+        width: initial;
+        padding-inline-end: 2.5vw;
+    }
+    .backgroundTotal article .divInformations h1{
+        font-size: 11vw;
+        margin-top: 0;
+    }
+    .backgroundTotal article .spanExibition .spanId{
+        display: none;
+    }
+    .backgroundTotal article span div span{
+        margin-top: 4vw;
+    }
+    #imagePokemon{
+        width: 50%;
+        margin: auto;
+        margin-top: -35vw;
+    }
+    .ulInfo li{
+        margin-bottom: -2vw;
+    }
+
+    .divVersions img{
+        width: 15vw;
+        height: 15vw;
+        margin-bottom: 5vw;
+    }
 }
+
+
 
 @media (min-width: 550px) {
     .asideExibitionPokemons{
@@ -65,10 +120,26 @@
         font-size: 2vw;
     }
     .button{
-        display: none;
+        height: 8vw;
+        width: 8vw;
+        margin: auto;
+    }
+    .button img{
+        width: 70%;
     }
     .backgroundTotal article{
+        width: 60%;
+        margin: auto;
         display: grid;
+        border-radius: 10px;
+    }
+    .backgroundTotal article .divInformations{
+        width: initial;
+        padding-inline-end: 2.5vw;
+    }
+    .backgroundTotal article .divInformations h1{
+        font-size: 7vw;
+        margin-top: 0;
     }
     .backgroundTotal article .spanExibition .spanId{
         margin: auto;
@@ -79,7 +150,21 @@
     .backgroundTotal article span div span{
         margin-top: 4vw;
     }
+    #imagePokemon{
+        width: 35%;
+        margin: auto;
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .divVersions img{
+        width: 7vw;
+        height: 7vw;
+    }
 }
+
+
+
 @media (min-width: 850px) {
     .asideExibitionPokemons{
         grid-gap: 2vw;
@@ -105,7 +190,20 @@
     }
 
     .backgroundTotal article span div span{
+        margin-top: 0;
         font-size: .8vw;
+    }
+    .backgroundTotal article{
+        width: 60%;
+        margin: auto;
+        display: grid;
+        border-radius: 10px;
+    }
+    .backgroundTotal article .divInformations{
+        width: 25vw;
+    }
+    .backgroundTotal article .divInformations h1{
+        font-size: 3vw;
     }
     .backgroundTotal article .spanExibition{
         width: 20vw;
@@ -117,10 +215,27 @@
         margin-top: 0;
         font-size: 5vw;
     }
+    .button{
+        height: 3.5vw;
+        width: 3.5vw;
+        display: block;
+        margin: auto;
+    }
+    .button img{
+        width: 1.5vw;
+    }
     .backgroundTotal article{
         display: flex;
     }
     #imagePokemon{
+        width: 35%;
         margin-left: 7vw;
+        margin: auto;
+        margin-top: 4vw;
+        margin-bottom: 2vw;
+    }
+    .divVersions img{
+        width: 3vw;
+        height: 3vw;
     }
 }
