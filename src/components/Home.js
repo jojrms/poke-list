@@ -2,6 +2,9 @@
 import { useEffect, useState } from 'react';
 import ArticlePokemon from './CSS/styled-components'
 
+import Header from './elements/Header/Header';
+import Initial from './elements/Initial/Initial';
+
 
 const Home = () => {
 
@@ -47,9 +50,9 @@ const Home = () => {
 
     return(
         <section id="pokedex">
-            <header id='header'>
-                <img className='imgIcone' src='https://logodownload.org/wp-content/uploads/2016/08/Pokemon-Go-logo.png'/>
-            </header>
+
+            <Header/>
+            <Initial/>
 
             {/* <section className='sectionOne'>
                 <aside>

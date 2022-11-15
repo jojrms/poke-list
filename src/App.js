@@ -6,6 +6,8 @@ import './components/CSS/homeResponsive.css';
 import './components/CSS/home.css';
 import './components/CSS/viewer.css';
 
+import './components/General.css'
+
 import {
   BrowserRouter,
   Routes,
