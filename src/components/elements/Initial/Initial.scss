@@ -1,0 +1,39 @@
+aside{
+    min-height: 60vh;
+    padding: 5vh 10vh;
+    display: flex;
+    grid-template-columns: auto 30%;
+
+    article{
+
+        h1{
+            font-size: 5vh;
+            color: white;
+            line-height: 150%;
+        }
+        p{
+            line-height: 150%;
+            margin-top: 3vh;
+            color: #ffffff69;
+        }  
+          
+    }
+
+    .spanRadius{
+        width: 20em;
+        height: 20em;
+        background-color: #374cc2;
+        position: absolute;
+        margin-left: 50%;
+        border-radius: 100%;
+        filter: blur(70px);
+    }
+    .spanImage{
+        width: 100%;
+        display: block;
+        background-image: url(../../Images/poke-cards.png);
+        background-position: right;
+    }
+
+    
+}
