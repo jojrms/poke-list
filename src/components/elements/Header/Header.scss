@@ -11,6 +11,7 @@ header{
         margin: auto auto auto 3vw;
         cursor: pointer;
         display: flex;
+        align-items: center;
         grid-gap: 2vh;
 
         img{
@@ -23,9 +24,9 @@ header{
         height: fit-content;
         margin: auto 5vw auto auto;
         display: flex;
-        grid-gap: 4vh;
+        grid-gap: 2vw;
         text-transform: uppercase;
-        font-size: 2vh;
+        font-size: 16px;
     }
 
     div{
@@ -36,10 +37,10 @@ header{
         button{
             height: fit-content;
             margin: auto;
-            padding: 1vh 4vh;
+            padding: 1vh 3vh;
             border-radius: 20px;
             color: white;
-            font-size: 2vh;
+            font-size: .9em;
         }
 
         #btnLogin{
