@@ -11,6 +11,9 @@ export default function Initial(){
 
                 <p>If there is something we love ot world, it's Pokémon. Whether you're <br/>
                  talking about the original 150.</p>
+
+                 <button id='btnExplore'>Explore</button>
+                 <button id='btnStore'>Go to store</button>
             </article>
             <span className="spanRadius"/>
             <span className="spanImage"/>
