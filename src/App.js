@@ -1,11 +1,4 @@
 import Home from "./components/Home";
-
-import './components/CSS/animations.css'
-
-import './components/CSS/homeResponsive.css';
-import './components/CSS/home.css';
-import './components/CSS/viewer.css';
-
 import './components/General.css'
 
 import {

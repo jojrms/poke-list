@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from 'react';
-import ArticlePokemon from './CSS/styled-components'
 
 import Header from './elements/Header/Header';
 import Initial from './elements/Initial/Initial';
@@ -77,7 +76,7 @@ const Home = () => {
                 </aside>
             </section> */}
 
-            <section className='sectionTwo'>
+            {/* <section className='sectionTwo'>
                 <div className='divPokedexHeader' style={{display: 'flex'}}>
                     <h1>Pokedex</h1>
                     <div>
@@ -108,7 +107,7 @@ const Home = () => {
                        />
                     )}
                 </aside>
-            </section>
+            </section> */}
         </section>
     )
 }
