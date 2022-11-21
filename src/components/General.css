@@ -1,5 +1,8 @@
-body{
+body, .App, #root{
+    width: 100%;
+    height: 100%;
     background-color: #040506;
+    position: absolute;
 }
 
 body * {
