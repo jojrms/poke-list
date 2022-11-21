@@ -3,6 +3,7 @@ body, .App, #root{
     height: 100%;
     background-color: #040506;
     position: absolute;
+    margin: 0;
 }
 
 body * {
