@@ -1,0 +1,28 @@
+.spanPokemonViewer{
+    display: block;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.048);
+
+    .spanId{
+        width: 5vh;
+        height: 5vh;
+        display: grid;
+        border-radius: 100%;
+        background-color: rgba(255, 255, 255, 0.116);
+        color: white;
+        margin: -1.5vh;
+        align-content: center;
+        justify-content: center;
+    }
+    h1{
+        color: #bebcb7;
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+}
