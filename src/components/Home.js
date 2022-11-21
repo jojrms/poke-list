@@ -1,5 +1,6 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from 'react';
+
+import './Home.scss';
 
 import Header from './elements/Header/Header';
 import Initial from './elements/Initial/Initial';

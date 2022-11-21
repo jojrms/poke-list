@@ -1,52 +1,26 @@
 aside{
-    padding: 5vh 10vh;
-    display: flex;
-    grid-template-columns: auto;
+    display: grid;
+    margin-top: 5vh;
+    grid-template-columns: 50% auto;
 
-    article{
-        width: 100%;
-        height: fit-content;
-        margin: auto;
-
-        h1{
-            font-size: 3vw;
-            color: white;
-            line-height: 150%;
-        }
-        p{
-            line-height: 150%;
-            margin: 3vh 0;
-            color: #ffffff69;
-        }  
-        button{
-            color: white;
-            padding: 1vh 3vh;
-            border-radius: 20px;
-            font-size: 1.3vw;
-        }
-        #btnExplore{
-            background-color: #16dba0;
-        }
-          
-    }
-
-    .spanRadius{
-        width: 20em;
-        height: 20em;
-        background-color: #374cc296;
-        position: absolute;
-        margin-left: 50%;
-        border-radius: 100%;
-        filter: blur(70px);
-        z-index: 1;
-    }
-    .spanImage{
-        width: 100%;
+    @media (max-width: 750px){
         display: block;
-        background-image: url(../../Images/poke-cards.png);
-        background-position: right;
-        z-index: 2;
     }
 
+    .sectionListPokemons{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        flex-flow: row wrap;
+        grid-gap: 4vw;
+        padding: 0vh 5vh;
+    }
+
+    .spanExbDetailsPokemon{
+    
+        @media (max-width: 750px){
+            display: none;
+        }
+    }
     
 }
