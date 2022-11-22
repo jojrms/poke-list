@@ -17,7 +17,7 @@ function App() {
             <Route path="/pokemons" element={<Home/>} />
             <Route
               path="/pokemons/:id"
-              element={<Viewer/>}
+              element={<Home/>}
             />
         </Routes>
       </div>
