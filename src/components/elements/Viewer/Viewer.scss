@@ -25,4 +25,63 @@
         display: block;
         margin: auto;
     }
+
+    .divTypes{
+        margin: 1vw 0vh;
+        display: flex;
+        grid-gap: 1vh;
+        justify-content: center;
+
+        span{
+            padding: .5vh 1vh;
+            border-radius: 20px;
+            font-size: .9em;
+            font-weight: 500;
+        }
+
+        .normal{
+            background-color: #ffffff2c;
+            color: #ffffff;
+        }
+        .fire{
+            background-color: #ff994d;
+            color: #7d3910;
+        }
+        .electric{
+            background-color: #f8c82a;
+            color: #7d4e10;
+        }
+        .water{
+            background-color: #8db6ff;
+            color: #0c2d6e;
+        }
+        .ground{
+            background-color: #cf7d12;
+            color: #462a07;
+        }
+        .grass{
+            background-color: #a8f085;
+            color: #1d5a0c;
+        }
+        .bug{
+            background-color: #33c53a;
+            color: #124205;
+        }
+        .steel{
+            background-color: #b1b1ca;
+            color: #3f3c45;
+        }
+        .poison{
+            background-color: #a234ec;
+            color: #38084e;
+        }
+        .fairy{
+            background-color: #be2c9f;
+            color: #470c3e;
+        }
+        .flying{
+            background-color: #c5d7f5;
+            color: #29406e;
+        }
+    }
 }
