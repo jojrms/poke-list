@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+
+import PokemonDetails from '../Pokemon Details/PokemonDetails';
 import Viewer from '../Viewer/Viewer';
 
 import './Initial.scss';
@@ -18,8 +20,6 @@ export default function Initial(){
           results.forEach( async pokemon => {
             const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
             const data =  await res.json()
-
-            console.log(data);
 
             setAllPokemons( currentList => [...currentList, data])
             })
@@ -46,7 +46,7 @@ export default function Initial(){
                 )}
             </section>
 
-            <span className='spanExbDetailsPokemon'></span>
+            <PokemonDetails/>
             
         </aside>
     )
