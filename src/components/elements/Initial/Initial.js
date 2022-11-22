@@ -40,7 +40,7 @@ export default function Initial(){
                         <Viewer
                             id={pokemon.id}
                             name={pokemon.name}
-                            generation={pokemon.name}
+                            typePokemon={pokemon.types}
                             photo_url={pokemon.sprites.front_default}                        
                         />
                 )}

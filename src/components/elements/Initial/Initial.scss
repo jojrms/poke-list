@@ -1,22 +1,33 @@
 aside{
     display: grid;
     margin-top: 5vh;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 60% auto;
+    overflow-y: hidden;
+    padding-bottom: 1%;
 
     @media (max-width: 750px){
         display: block;
     }
 
     .sectionListPokemons{
-        height: 100%;
         display: grid;
         grid-template-columns: repeat(3, auto);
         flex-flow: row wrap;
         grid-gap: 4vw;
-        padding: 0vh 5vh;
+        padding: 2vh 5vh;
+        overflow-y: scroll;
+    }
+    .sectionListPokemons::-webkit-scrollbar{
+        width: 1vh;
+        background-color: rgba(255, 255, 255, 0.089);
+    }
+    .sectionListPokemons::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 255, 255, 0.13);
     }
 
     .spanExbDetailsPokemon{
+        background-color: rgba(255, 255, 255, 0.055);
+        margin: 0vh 2vh;
     
         @media (max-width: 750px){
             display: none;
